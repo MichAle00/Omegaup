@@ -22,7 +22,6 @@ int main(void)
         for (int j = 0; j < C; j++)
         {
             row[j] = array[i][j];
-
         }
         finalr = latin(C, C+R, row);
         printf("%i ", finalr);
@@ -48,7 +47,7 @@ int latin(int size, int range, int array[])
     {
         for (int j = i + 1; j < size; j++)
         {
-            if (array[i] == array[j] || array[j] > range)
+            if (array[i] == array[j] || array[i] > range || array[j] > range)
             {
                 return 0;
             }
