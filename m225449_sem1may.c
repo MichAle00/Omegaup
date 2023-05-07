@@ -31,7 +31,7 @@ int main(void){
     printf("Numeros: \n");
     for (int i = 0; i < ny; i++)
     {
-        printf("%i ", *n + i);
+        printf("%i ", *(n + i));
     }
     printf("\nLetras: \n");
     for (int i = 0; i < nx; i++)
